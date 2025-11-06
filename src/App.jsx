@@ -86,7 +86,7 @@ export default function App() {
           <SpotlightCard>
             <a href="https://open.spotify.com/user/lusjomyqa28j03k56htnqsnna?si=2a59c6857d554b02" className='flex items-center'>
               <img alt='Spotify' className='w-10 h-10 object-cover rounded-full inline' src="/icon/Spotify Animation.gif" />
-              <span className='ml-8 text-lg text-center'>My Spotify</span>
+              <span className='ml-7 mr-7 text-lg text-center'>My Spotify</span>
             </a>
           </SpotlightCard>
 
@@ -94,7 +94,7 @@ export default function App() {
           <SpotlightCard>
             <a href="https://steamcommunity.com/profiles/76561199013414648/" className='flex items-center'>
               <img alt='Steam' className='w-10 h-10 object-cover rounded-full inline' src="/icon/Steam_icon_logo.svg.png" />
-              <span className='ml-8 text-lg'>My Steam</span>
+              <span className='ml-7 mr-7 text-lg'>My Steam</span>
             </a>
           </SpotlightCard>
           
@@ -102,18 +102,17 @@ export default function App() {
           <SpotlightCard>
             <a href="#" className='flex items-center' onClick={handlePortfolioClicked}>
               <img alt='Portfolio' className='w-10 h-10 object-cover rounded-full inline' src="/icon/portfolio.gif" />
-              <span className='ml-8 text-lg'>My Portfolio</span>
+              <span className='ml-7 mr-7 text-lg'>My Portfolio</span>
             </a>
           </SpotlightCard>
         </div>
-
         <div>
-          <p onClick={handleShoppingClicked} className='relative rounded-3xl border border-neutral-800 bg-neutral-900 overflow-hidden p-4 text-lg mt-10'>SHOPPING</p>
+          <p onClick={handleShoppingClicked} className='relative rounded-3xl border border-neutral-800 bg-neutral-900 overflow-hidden p-4 text-lg mt-5'>SHOPPING</p>
         </div>
       </div>
 
       {/* copyright */}
-        <footer className="text-sm text-neutral-400 flex flex-col items-center justify-center bg-none text-white mb-5">
+        <footer className="text-sm text-neutral-400 flex flex-col items-center justify-center bg-none text-white mt-10 mb-5">
           <p>© 2025 Le Quoc Dat. All rights reserved.</p>
         </footer>
 
