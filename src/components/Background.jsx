@@ -1,12 +1,12 @@
 import { useRef, useEffect } from 'react';
 
 export default function Background({
-  glitchColors = ['#2b4539', '#61dca3', '#61b3dc'],
+  glitchColors = ['#FF0000', '#B00000', '#FFFFFF'],
   glitchSpeed = 50,
   centerVignette = false,
   outerVignette = true,
   smooth = true,
-  characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789'
+  characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズヅブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン'
 }) {
   const canvasRef = useRef(null);
   const animationRef = useRef(null);
@@ -199,7 +199,7 @@ export default function Background({
 
   return (
     <>
-      <div className="relative w-full h-full bg-black overflow-hidden" style={{zIndex: "-10", width:"100vw", height:"100vh", position:"fixed", top:"0", left:"0" }}>
+      <div className="relative w-full h-full bg-black overflow-hidden brightness-35" style={{zIndex: "-10", width:"100vw", height:"100vh", position:"fixed", top:"0", left:"0" }}>
         <canvas ref={canvasRef} className="block w-full h-full" />
         {outerVignette && (
           <div className="absolute top-0 left-0 w-full h-full pointer-events-none bg-[radial-gradient(circle,_rgba(0,0,0,0)_60%,_rgba(0,0,0,1)_100%)]"></div>
