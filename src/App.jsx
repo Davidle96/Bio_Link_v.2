@@ -32,6 +32,10 @@ export default function App() {
     showNotification("Updating....");
   }
 
+  const handleShoppingClicked = () => {
+    showNotification("Updating....");
+  }
+
   return (
     <>
       <Intro />
@@ -101,6 +105,10 @@ export default function App() {
               <span className='ml-8 text-lg'>My Portfolio</span>
             </a>
           </SpotlightCard>
+        </div>
+
+        <div>
+          <p onClick={handleShoppingClicked} className='relative rounded-3xl border border-neutral-800 bg-neutral-900 overflow-hidden p-4 text-lg mt-10'>SHOPPING</p>
         </div>
       </div>
 
