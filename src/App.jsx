@@ -28,10 +28,6 @@ export default function App() {
     }, 2000);
   };
 
-  const handlePortfolioClicked = () => {
-    showNotification("Updating....");
-  }
-
   const handleShoppingClicked = () => {
     showNotification("Updating....");
   }
@@ -97,24 +93,26 @@ export default function App() {
               <span className='ml-7 mr-7 text-lg'>My Steam</span>
             </a>
           </SpotlightCard>
-          
+
           {/* portfolio */}
           <SpotlightCard>
-            <a href="#" className='flex items-center' onClick={handlePortfolioClicked}>
+            <a href="https://portfolio-toyx.onrender.com" className='flex items-center'>
               <img alt='Portfolio' className='w-10 h-10 object-cover rounded-full inline' src="/icon/portfolio.gif" />
               <span className='ml-7 mr-7 text-lg'>My Portfolio</span>
             </a>
           </SpotlightCard>
         </div>
+
+        {/* shopping */}
         <div>
           <p onClick={handleShoppingClicked} className='relative rounded-3xl border border-neutral-800 bg-neutral-900 overflow-hidden p-4 text-lg mt-5'>SHOPPING</p>
         </div>
       </div>
 
       {/* copyright */}
-        <footer className="text-sm text-neutral-400 flex flex-col items-center justify-center bg-none text-white mt-10 mb-5">
-          <p>© 2025 Le Quoc Dat. All rights reserved.</p>
-        </footer>
+      <footer className="text-sm text-neutral-400 flex flex-col items-center justify-center bg-none text-white mt-10 mb-5">
+        <p>© 2025 Le Quoc Dat. All rights reserved.</p>
+      </footer>
 
       {/* notification */}
       <AnimatePresence>
